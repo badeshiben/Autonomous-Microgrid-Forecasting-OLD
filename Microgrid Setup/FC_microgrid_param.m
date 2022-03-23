@@ -15,7 +15,14 @@ Ts_Control=10*Ts_Power;
 
 Ts = Ts_Power;      % Temp fix of SNL wind turbine block
 
-SOC_target = 0.5;
+SOC_target = 0.7;
+
+Pmax_WT = 618460;
+Pmax_PV = 430000;
+GHI_rated = 1100;
+U_rated = 12;
+U_min = 6;
+forecast = readmatrix('forecasting.xlsx');
 
 % MGCC_in = struct('f_B2',1,...
 %     'V_B2', 1,...
